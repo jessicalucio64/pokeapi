@@ -1,0 +1,26 @@
+.tarjeta{
+   
+    background: white;
+    color: black;
+    max-width: 200px;
+    max-height: 430px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  
+}
+.users{
+   display: flex;
+   gap:30px;
+}	
+ol{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rectangulo{
+    width: 200px;
+    height: 30px;
+    background: red;
+
+}

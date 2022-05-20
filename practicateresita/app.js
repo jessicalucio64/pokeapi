@@ -63,7 +63,10 @@ function renderUsers(users) {
 
 
 
-                userList.innerHTML += `<li class="bg-zinc-800 hover:bg-zinc-700 hover:cursor-pointer"> 
+                userList.innerHTML += `<li class="tarjeta"> 
+                    <div class="rectangulo">   
+                    </div>
+                
                     <img src="${data.sprites.front_default}"><br>
                     ${data.id.toString().padStart(3, 0)}<br>
                     ${data.name}<br>
