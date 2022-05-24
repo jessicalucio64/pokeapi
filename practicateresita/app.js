@@ -6,6 +6,7 @@ let arreglopokemon = [];
 class pokemon {
     constructor() {
         this.datospokemon = []
+        this.cargarCursos();
 
     }
 
@@ -16,8 +17,9 @@ class pokemon {
         this.datospokemon = datospokemon
     }
 
+
     cargarCursos() {
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=50&offset=0").then(curso => {
+        fetch("https://pokeapi.co/api/v2/pokemon/").then(curso => {
             return curso.json();
         }).then(data => {
             let datos = data.cursos;
@@ -25,13 +27,11 @@ class pokemon {
                 const dive = document.createElement('div');
                 dive.innerHTML =
                     `<div class="card card__custom">
-                <img src="${cursito.name}" >
-                
+                    <p>${cursito.results.name}</p>
                 </div>`;
-                console.log(cursito.name);
-                columnas.appendChild(dive);
+                console.log(cursito);
+
             })
         })
     }
-
 }
